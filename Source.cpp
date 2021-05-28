@@ -1,6 +1,5 @@
 #include "json/json.h"
 #include <iostream>
-#include <conio.h>
 
 int main() {
 	const std::string rawJson = R"({"Age": 20, "Name": "colin"})";
@@ -45,7 +44,6 @@ int main() {
 		return EXIT_FAILURE;
 	}
 	std::cout << "\n" << student << "\n" << student["lab"] << "\n";
-
-
-	_getch();
+	
+	std::cin.get();
 }
